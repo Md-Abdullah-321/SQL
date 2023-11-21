@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+        width: 350px;
+      }
+
+      .btn {
+        cursor: pointer;
+      }
+    </style>
+    <title>Register Student</title>
+  </head>
+  <body>
+    <div>
+      <form method="post">
+        <input type="number" name="roll" placeholder="Enter Roll Number" />
+        <input type="text" name="student_name" placeholder="Enter Your Name" />
+        <input type="text" name="department" placeholder="Enter Department" />
+        <input type="text" name="semester" placeholder="Enter Semester" />
+        <input type="text" name="shift" placeholder="Enter Shift" />
+
+        <input type="submit" value="Submit" class="btn" />
+      </form>
+    </div>
+  </body>
+</html>
